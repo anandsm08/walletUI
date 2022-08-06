@@ -21,7 +21,15 @@ class OptionCard extends StatelessWidget {
       height: 120,
       width: 120,
       decoration: BoxDecoration(
-          color: optioncolor, borderRadius: BorderRadius.circular(25)),
+          color: optioncolor,
+          borderRadius: BorderRadius.circular(25),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.shade600,
+              blurRadius: 8,
+              spreadRadius: 4,
+            )
+          ]),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

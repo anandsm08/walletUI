@@ -56,3 +56,14 @@ class MyWallet extends StatelessWidget {
     );
   }
 }
+
+/*
+if(balance<2000){
+  color:Colors.yellow
+}elseif(balance<1000){
+  color:Colors.red
+}else{
+  color:colors.green
+}
+*/
+
