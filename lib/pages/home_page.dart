@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:walletapp/util/bank_cards.dart';
 import 'package:walletapp/util/my_wallet.dart';
 import 'package:walletapp/util/option_card.dart';
 
@@ -78,9 +79,9 @@ class _HomePageState extends State<HomePage> {
             ),
             SizedBox(height: 20),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 5.0),
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     OptionCard(
                         optioncolor: Colors.green[600],
@@ -88,7 +89,7 @@ class _HomePageState extends State<HomePage> {
                             'lib/walletappicons/icons8-cash-in-hand-48.png',
                         optionname: 'Pay'),
                     OptionCard(
-                        optioncolor: Colors.red[600],
+                        optioncolor: Colors.lightBlue[500],
                         optionicon: 'lib/walletappicons/icons8-invoice-48.png',
                         optionname: 'Bills'),
                     OptionCard(
@@ -96,8 +97,28 @@ class _HomePageState extends State<HomePage> {
                         optionicon: 'lib/walletappicons/icons8-receive-64.png',
                         optionname: 'Receive'),
                   ]),
-            )
-            //column
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            //transaction
+            Column(children: [
+              BankCard(
+                  bkch: 'Transaction History',
+                  bkcp: 'Recent Transactions',
+                  bkcimg: 'lib/walletappicons/icons8-transaction-64.png',
+                  bkcolor: Colors.pink[200]),
+              SizedBox(
+                height: 10,
+              ),
+              BankCard(
+                  bkch: 'Transaction History',
+                  bkcp: 'Recent Transactions',
+                  bkcimg: 'lib/walletappicons/icons8-transaction-64.png',
+                  bkcolor: Colors.pinkAccent[200]),
+            ]
+                //column
+                ),
           ],
         ),
       ),

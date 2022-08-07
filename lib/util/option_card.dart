@@ -1,7 +1,5 @@
 // ignore_for_file: prefer_const_constructors, prefer_typing_uninitialized_variables
 
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 class OptionCard extends StatelessWidget {
@@ -18,24 +16,24 @@ class OptionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 120,
-      width: 120,
+      height: 110,
+      width: 110,
       decoration: BoxDecoration(
           color: optioncolor,
           borderRadius: BorderRadius.circular(25),
           boxShadow: [
             BoxShadow(
               color: Colors.grey.shade600,
-              blurRadius: 8,
-              spreadRadius: 4,
+              blurRadius: 10,
+              spreadRadius: 1,
             )
           ]),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-              height: 80,
-              width: 80,
+              height: 70,
+              width: 70,
               padding: EdgeInsets.all(20.0),
               decoration: BoxDecoration(
                   color: Colors.white, borderRadius: BorderRadius.circular(70)),

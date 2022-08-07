@@ -22,7 +22,9 @@ class MyWallet extends StatelessWidget {
         height: 270,
         padding: EdgeInsets.all(20),
         decoration: BoxDecoration(
-            color: color, borderRadius: BorderRadius.circular(15)),
+          color: color,
+          borderRadius: BorderRadius.circular(15),
+        ),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           Text(
             'Balance',
